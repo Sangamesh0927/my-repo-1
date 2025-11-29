@@ -1,0 +1,17 @@
+---
+name: workflow to run linux commands
+on: workflow_dispatch # manually run the workflow
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+        - name: my-job
+          run: echo "Hello All, Welcome to GitHub Action Class"
+  job2:
+    runs-on: ubuntu-24.04
+    steps:
+        - name: my-job-1
+          run: |
+            hostname -s
+            echo "Thank you All"
+            
