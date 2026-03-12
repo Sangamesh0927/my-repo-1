@@ -1,4 +1,6 @@
 name: build nodejs application
+permissions:
+  contents: read
 on: # multiple triggers when this workflow can run
  workflow_dispatch:
  push:
